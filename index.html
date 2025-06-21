@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joy | Video Editor</title> <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="video-background">
+      <video autoplay muted loop id="background-video">
+        <source src="background-video.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay"></div>
+    </div>
+
+    <header>
+      <div class="logo">
+        <h1>Yeasir Arafat Joy</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>Hi! 👋<br>I am Yeasir Arafat Joy</h1>
+          <span class="dynamic-text"><span id="typewriter"></span></span>
+          <br>
+          <h2>I am a <span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+          <p> Creating bold, engagement-driven content that gets results. </p>
+          <p> Detail-oriented, visually elevated, always client-focused.</p>
+          <div class="cta-buttons">
+            <a href="#Portfolio" class="cta-button">View My Work</a>
+            <a href="Yeasir-Arafat-Joy-FlowCV-Resume.pdf" class="cta-button secondary">Download Resume</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>I’m a professional Video Editor and Visual Designer with a sharp eye for storytelling and detail. I specialize in crafting high-impact, visually engaging content that captivates audiences and elevates brands. With deep expertise in industry-standard tools and advanced editing techniques, I consistently deliver premium-quality work that exceeds client expectations, on time and on point.</p>
+              <h3 style="text-align:center;">Tools I Use</h3>
+              <div class="tools tool-image-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+                <div class="tool tool-image-box"><img src="icons/ae.png" alt="After Effects"></div>
+                <div class="tool tool-image-box"><img src="icons/ai.png" alt="Premiere Pro"></div>
+                <div class="tool tool-image-box"><img src="icons/au.png" alt="Audition"></div>
+                <div class="tool tool-image-box"><img src="icons/da.png" alt="DaVinci Resolve"></div>
+                <div class="tool tool-image-box"><img src="icons/lightroom.png" alt="Final Cut Pro"></div>
+                <div class="tool tool-image-box"><img src="icons/notion.png" alt="Illustrator"></div>
+                <div class="tool tool-image-box"><img src="icons/pr.png" alt="Blender"></div>
+                <div class="tool tool-image-box"><img src="icons/ps.png" alt="Notion"></div>
+                <div class="tool tool-image-box"><img src="icons/wordpress.png" alt="Scripting Tools"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Portfolio">
+        <div class="container">
+          <h2 class="section-title">My Portfolio</h2>
+          <div class="project-gallery">
+            <!-- Best Work -->
+            <div class="project-item">
+              <div class="project-preview">
+                <iframe src="https://www.youtube.com/embed/your-best-work" allowfullscreen></iframe>
+              </div>
+              <div class="project-info">
+                <h3>Best Work Highlight</h3>
+                <p>Your most impressive, high-impact project. Replace this with your best work video link.</p>
+                <a href="#" target="_blank" class="view-project">View Full Project</a>
+              </div>
+            </div>
+          </div>
+          <a href="#projects" class="view-works-btn">View my works</a>
+        </div>
+      </section>
+
+      <section id="Product" class="projects">
+        <div class="container">
+          <h2 class="section-title">Long Form Product Explainers</h2>
+          <div class="project-gallery">
+            <!-- Product Explainer 1 -->
+            <div class="project-item">
+              <div class="project-preview">
+                <iframe src="https://www.youtube.com/embed/product-explainer-1" allowfullscreen></iframe>
+              </div>
+              <div class="project-info">
+                <h3>Product Explainer 1</h3>
+                <p>Long form product explainer video. Replace with your actual video link.</p>
+                <a href="#" target="_blank" class="view-project">View Full Project</a>
+              </div>
+            </div>
+            <!-- Product Explainer 2 -->
+            <div class="project-item">
+              <div class="project-preview">
+                <iframe src="https://www.youtube.com/embed/product-explainer-2" allowfullscreen></iframe>
+              </div>
+              <div class="project-info">
+                <h3>Product Explainer 2</h3>
+                <p>Another long form product explainer video. Replace with your actual video link.</p>
+                <a href="#" target="_blank" class="view-project">View Full Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Promo" class="projects">
+        <div class="container">
+          <h2 class="section-title">Short Form Promo Content</h2>
+          <div class="project-gallery">
+            <!-- Promo 1 -->
+            <div class="project-item">
+              <div class="project-preview">
+                <iframe src="https://www.youtube.com/embed/promo-1" allowfullscreen></iframe>
+              </div>
+              <div class="project-info">
+                <h3>Promo Video 1</h3>
+                <p>Short form promotional content. Replace with your actual video link.</p>
+                <a href="#" target="_blank" class="view-project">View Full Project</a>
+              </div>
+            </div>
+            <!-- Promo 2 -->
+            <div class="project-item">
+              <div class="project-preview">
+                <iframe src="https://www.youtube.com/embed/promo-2" allowfullscreen></iframe>
+              </div>
+              <div class="project-info">
+                <h3>Promo Video 2</h3>
+                <p>Short form promotional content. Replace with your actual video link.</p>
+                <a href="#" target="_blank" class="view-project">View Full Project</a>
+              </div>
+            </div>
+            <!-- Promo 3 -->
+            <div class="project-item">
+              <div class="project-preview">
+                <iframe src="https://www.youtube.com/embed/promo-3" allowfullscreen></iframe>
+              </div>
+              <div class="project-info">
+                <h3>Promo Video 3</h3>
+                <p>Short form promotional content. Replace with your actual video link.</p>
+                <a href="#" target="_blank" class="view-project">View Full Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <a href="mailto:arafat.yeasir.joy@gmail.com">
+                  <i class="fa fa-envelope"></i>
+                  <span>arafat.yeasir.joy@gmail.com</span>
+                </a>
+              </div>
+              <div class="contact-item">
+                <a href="tel:+8801622191234">
+                  <i class="fa fa-phone"></i>
+                  <span>+880 162219 1234</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Yeasir Arafat Joy</h2>
+            <p>Video Editor | Motion Graphics Designer| Visual Storyteller</p>
+          </div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/eru_the.explainer/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+8801622191234" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Yeasir Arafat Joy. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

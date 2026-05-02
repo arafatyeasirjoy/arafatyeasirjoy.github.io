@@ -1,203 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joy | Video Editor</title> <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  </head>
-  <body>
-    <div class="video-background">
-      <video autoplay muted loop id="background-video">
-        <source src="background-video.mp4" type="video/mp4" />
-      </video>
-      <div class="overlay"></div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeasir Arafat Joy | Video Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Oswald:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Ambient Background -->
+  <div class="noise-overlay"></div>
+  <div class="ambient-glow"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-container">
+      <div class="nav-brand"><i class="ph-fill ph-video-camera"></i> JOY.</div>
+      <div class="menu-toggle" id="mobile-menu-btn">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+      <div class="nav-links" id="nav-menu">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#approach" class="nav-link">Approach</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
     </div>
+  </nav>
 
-    <header>
-      <div class="logo">
-        <h1>Yeasir Arafat Joy</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
-    </header>
-
-    <main>
-      <section id="home" class="hero">
-        <div class="hero-content">
-          <h1>Hi! 👋<br>I am Yeasir Arafat Joy</h1>
-          <span class="dynamic-text"><span id="typewriter"></span></span>
-          <br>
-          <h2>I am a <span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
-          <p> Creating bold, engagement-driven content that gets results. </p>
-          <p> Detail-oriented, visually elevated, always client-focused.</p>
-          <div class="cta-buttons">
-            <a href="#Portfolio" class="cta-button">View My Work</a>
-            <a href="Yeasir-Arafat-Joy-FlowCV-Resume.pdf" class="cta-button secondary">Download Resume</a>
-          </div>
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge fade-up">
+          <i class="ph-fill ph-magic-wand"></i> Video Editor & Visual Designer
         </div>
-      </section>
-
-      <section id="about" class="about">
-        <div class="container">
-          <h2 class="section-title">About Me</h2>
-          <div class="about-content">
-            <div class="about-text">
-              <p>I’m a professional Video Editor and Visual Designer with a sharp eye for storytelling and detail. I specialize in crafting high-impact, visually engaging content that captivates audiences and elevates brands. With deep expertise in industry-standard tools and advanced editing techniques, I consistently deliver premium-quality work that exceeds client expectations, on time and on point.</p>
-              <h3 style="text-align:center;">Tools I Use</h3>
-              <div class="tools tool-image-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-                <div class="tool tool-image-box"><img src="icons/ae.png" alt="After Effects"></div>
-                <div class="tool tool-image-box"><img src="icons/ai.png" alt="Premiere Pro"></div>
-                <div class="tool tool-image-box"><img src="icons/au.png" alt="Audition"></div>
-                <div class="tool tool-image-box"><img src="icons/da.png" alt="DaVinci Resolve"></div>
-                <div class="tool tool-image-box"><img src="icons/lightroom.png" alt="Final Cut Pro"></div>
-                <div class="tool tool-image-box"><img src="icons/notion.png" alt="Illustrator"></div>
-                <div class="tool tool-image-box"><img src="icons/pr.png" alt="Blender"></div>
-                <div class="tool tool-image-box"><img src="icons/ps.png" alt="Notion"></div>
-                <div class="tool tool-image-box"><img src="icons/wordpress.png" alt="Scripting Tools"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="Portfolio">
-        <div class="container">
-          <h2 class="section-title">My Portfolio</h2>
-          <div class="project-gallery">
-            <!-- Best Work -->
-            <div class="project-item">
-              <div class="project-preview">
-<iframe width="560" height="315" src="https://drive.google.com/file/d/161R1IhW2vvtCwGzY3qgsRUjs6l8KrurL/preview" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>              </div>
-              <div class="project-info">
-                <h3>Recent Work Highlight</h3>
-                <p>My most recent, high-impact project. Produced a product demo video showcasing FlyWP's ease of use, key features, and performance benefits aimed at boosting user adoption and conversions.</p>
-                <a href="project-details.html" target="_blank" class="view-project">View Full Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="Product" class="projects">
-        <div class="container">
-          <h2 class="section-title">Long Form Product Explainers</h2>
-          <div class="project-gallery">
-            <!-- Product Explainer 1 -->
-            <div class="project-item">
-              <div class="project-preview">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dCNIymnYOuM?si=4yeCuNg8_99ZLm3-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div class="project-info">
-                <h3>Explainer Video</h3>
-                <p>Long form product explainer video. Made back in 2022. This long-form product explainer video, centered around its visionary founder Ayman Sadiq, is more than just a breakdown of a digital learning platform. It's a look into how a single idea can reshape education for millions.</p>
-                <a href="product-details-1.html" target="_blank" class="view-project">View Full Project</a>
-              </div>
-            </div>
-
-            <!-- Product Explainer 2 -->
-            <div class="project-item">
-              <div class="project-preview">
-<iframe src="https://drive.google.com/file/d/1-GaMw5QJEnVMU9SqUnMjv6R8A_Y9h1P7/preview" width="640" height="480" allow="autoplay" allowfullscreen></iframe>              </div>
-              <div class="project-info">
-                <h3>Product Explainer 2</h3>
-                <p>Another long form product explainer video. In this comprehensive long-form explainer, we take a deep dive into Dokan Cloud — the powerful SaaS-based multivendor platform that’s transforming how entrepreneurs and enterprises build online marketplaces.</p>
-                <a href="product-details-2.html" target="_blank" class="view-project">View Full Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="Promo" class="projects">
-        <div class="container">
-          <h2 class="section-title">Short Form Promo Content</h2>
-          <div class="project-gallery">
-            <!-- Promo 1 -->
-            <div class="project-item">
-              <div class="project-preview">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Dc85Ca7oET8?si=3NtpZIUGXOGH2h0Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>              </div>
-              <div class="project-info">
-                <h3>Explaining - The One Punch Man</h3>
-                <p>Meet Saitama — an ordinary guy who trained so hard he went bald… and became the strongest being in the universe. In the world of One Punch Man, monsters, aliens, and superpowered villains threaten humanity daily — but none of them stand a chance against Saitama's single, effortless punch.</p>
-                <a href="promo-details-1.html" target="_blank" class="view-project">View Full Project</a>
-              </div>
-            </div>
-            <!-- Promo 2 -->
-            <div class="project-item">
-              <div class="project-preview">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2c98sTExxG0?si=cR-8V5Ovex2C0DNi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>              </div>
-              <div class="project-info">
-                <h3>Butterfly Effect Explained</h3>
-                <p>Welcome to the Butterfly Effect — the mind-bending concept that small actions can trigger massive consequences over time. In this short video, we break down how tiny changes in initial conditions can lead to unpredictable, world-changing outcomes.</p>
-                <a href="promo-details-2.html" target="_blank" class="view-project">View Full Project</a>
-              </div>
-            </div>
-            <!-- Promo 3 --
-            <div class="project-item">
-              <div class="project-preview">
-                <iframe src="https://www.youtube.com/embed/promo-3" allowfullscreen></iframe>
-              </div>
-              <div class="project-info">
-                <h3>Promo Video 3</h3>
-                <p>Short form promotional content. Replace with your actual video link.</p>
-                <a href="#" target="_blank" class="view-project">View Full Project</a>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact">
-        <div class="container">
-          <h2 class="section-title">Get In Touch</h2>
-          <div class="contact-content">
-            <div class="contact-info">
-              <div class="contact-item">
-                <a href="mailto:arafat.yeasir.joy@gmail.com">
-                  <i class="fa fa-envelope"></i>
-                  <span>arafat.yeasir.joy@gmail.com</span>
-                </a>
-              </div>
-              <div class="contact-item">
-                <a href="tel:+8801622191234">
-                  <i class="fa fa-phone"></i>
-                  <span>+880 162219 1234</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <h2>Yeasir Arafat Joy</h2>
-            <p>Video Editor | Motion Graphics Designer| Visual Storyteller</p>
-          </div>
-          <div class="social-links">
-            <a href="https://www.instagram.com/eru_the.explainer/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/+8801622191234" target="_blank"><i class="fab fa-whatsapp"></i></a>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>&copy; 2025 Yeasir Arafat Joy. All Rights Reserved.</p>
+        <h1 class="hero-title">
+          <span class="reveal-wrapper"><span class="reveal-text">Attention</span></span><br>
+          <span class="reveal-wrapper"><span class="reveal-text highlight">Engineer.</span></span>
+        </h1>
+        <p class="hero-sub fade-up delay-1">
+          I craft high retention video content that captivates audiences and elevates brands. Driven by visual
+          storytelling, polished precision, and modern workflows.
+        </p>
+        <div class="hero-actions fade-up delay-2">
+          <a href="#work" class="primary-btn magnetic-btn"><i class="ph-bold ph-play"></i> Explore Work</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </header>
 
-    <script src="main.js"></script>
-  </body>
+  <!-- Marquee Conveyer -->
+  <div class="marquee-wrapper fade-up-scroll">
+    <div class="marquee-track">
+      <span>DYNAMIC PACING <i class="ph-fill ph-star-four"></i> VISUAL STORYTELLING <i class="ph-fill ph-star-four"></i>
+        SEAMLESS TRANSITIONS <i class="ph-fill ph-star-four"></i> AUDIENCE RETENTION <i
+          class="ph-fill ph-star-four"></i></span>
+      <span>DYNAMIC PACING <i class="ph-fill ph-star-four"></i> VISUAL STORYTELLING <i class="ph-fill ph-star-four"></i>
+        SEAMLESS TRANSITIONS <i class="ph-fill ph-star-four"></i> AUDIENCE RETENTION <i
+          class="ph-fill ph-star-four"></i></span>
+      <span>DYNAMIC PACING <i class="ph-fill ph-star-four"></i> VISUAL STORYTELLING <i class="ph-fill ph-star-four"></i>
+        SEAMLESS TRANSITIONS <i class="ph-fill ph-star-four"></i> AUDIENCE RETENTION <i
+          class="ph-fill ph-star-four"></i></span>
+    </div>
+  </div>
+
+  <!-- Approach Section -->
+  <section id="approach" class="approach-section">
+    <div class="container">
+      <div class="approach-grid">
+        <div class="approach-text fade-up-scroll">
+          <h2 class="section-title"><i class="ph-duotone ph-target"></i> The Approach</h2>
+          <p class="lead-text">
+            Editing is more than cutting clips. It’s about engineering rhythm and respecting the viewer's time to
+            maximize engagement.
+          </p>
+          <p class="sub-text">
+            By blending industry standard precision with next-generation AI workflows, I deliver striking content
+            without losing the soul of the message.
+          </p>
+        </div>
+
+        <div class="tools-container fade-up-scroll delay-1">
+          <div class="tool-card">
+            <h3><i class="ph-fill ph-film-strip"></i> The Classics</h3>
+            <div class="tool-tags">
+              <span class="tool-tag"><i class="ph-bold ph-scissors"></i> Premiere Pro</span>
+              <span class="tool-tag"><i class="ph-bold ph-aperture"></i> After Effects</span>
+              <span class="tool-tag"><i class="ph-bold ph-palette"></i> DaVinci Resolve</span>
+              <span class="tool-tag"><i class="ph-bold ph-video-camera-slash"></i> Final Cut Pro</span>
+            </div>
+          </div>
+          <div class="tool-card ai-card">
+            <h3><i class="ph-fill ph-robot"></i> The Future (AI)</h3>
+            <div class="tool-tags">
+              <span class="tool-tag ai"><i class="ph-bold ph-waveform"></i> ElevenLabs</span>
+              <span class="tool-tag ai"><i class="ph-bold ph-lightning"></i> Seedance 2.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shorts -->
+  <section id="work" class="work-section bg-soft">
+    <div class="container">
+      <div class="section-header text-center fade-up-scroll">
+        <h2 class="section-title"><i class="ph-duotone ph-device-mobile"></i> Short Form</h2>
+        <p class="section-sub">High pace, vertical formats engineered for discovery.</p>
+      </div>
+
+      <div class="shorts-grid">
+        <!-- Short 1 -->
+        <div class="short-card fade-up-scroll">
+          <div class="video-wrapper vertical">
+            <iframe src="https://drive.google.com/file/d/1ePnVgW1eMlfyQawJXBNE1C5iek5eFN2a/preview"
+              allowfullscreen></iframe>
+          </div>
+          <div class="card-meta">
+            <h3>Mistakes to Avoid</h3>
+            <p><i class="ph ph-books"></i> Lore Breakdown</p>
+          </div>
+        </div>
+        <!-- Short 2 -->
+        <div class="short-card fade-up-scroll delay-1">
+          <div class="video-wrapper vertical">
+            <iframe src="https://drive.google.com/file/d/1h-q2fBkWtww8ybmw5Qj5HMBsoxsFPrrs/preview"
+              allowfullscreen></iframe>
+          </div>
+          <div class="card-meta">
+            <h3>Hooks to Conversion</h3>
+            <p><i class="ph ph-lightbulb"></i> Concept Explainer</p>
+          </div>
+        </div>
+        <!-- Short 3 -->
+        <div class="short-card fade-up-scroll delay-2">
+          <div class="video-wrapper vertical empty-video">
+            <iframe src="https://drive.google.com/file/d/1MZv5tU8hrlqIGnX_S4ZHu37YeImOqk1V/preview"
+              allowfullscreen></iframe>
+          </div>
+          <div class="card-meta">
+            <h3>Origin Explainer Video</h3>
+            <p><i class="ph ph-clock-countdown"></i> In Post Production</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Long Form -->
+  <section class="work-section">
+    <div class="container">
+      <div class="section-header fade-up-scroll">
+        <h2 class="section-title"><i class="ph-duotone ph-monitor-play"></i> Long Form</h2>
+        <p class="section-sub">Cinematic deep dives and comprehensive product narratives.</p>
+      </div>
+
+      <div class="longform-grid">
+        <!-- Long 1 -->
+        <div class="long-item fade-up-scroll">
+          <div class="video-container">
+            <div class="video-wrapper horizontal">
+              <iframe src="https://drive.google.com/file/d/1Jvg1BWs02A-J_JTlONF7eMyDDKD4rHsv/preview"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="text-container">
+            <span class="badge"><i class="ph ph-projector-screen"></i> Course Intro</span>
+            <h3>Founder Vision</h3>
+            <p>A cinematic look into outcome driven ecosystems. Focused on narrative flow, precise pacing, and high
+              end motion graphics.</p>
+          </div>
+        </div>
+
+        <!-- Long 2 (Reverse on Desktop) -->
+        <div class="long-item reverse fade-up-scroll">
+          <div class="video-container">
+            <div class="video-wrapper horizontal">
+              <iframe src="https://drive.google.com/file/d/1uHci1OnyWZ1beLk_MB7gxoJzi-7ijmQs/preview"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="text-container">
+            <span class="badge"><i class="ph ph-cloud-arrow-up"></i> B2B SaaS</span>
+            <h3>On Point</h3>
+            <p>Comprehensive B2B product explainer delivering clear value propositions with premium SaaS aesthetics and
+              clean visuals.</p>
+          </div>
+        </div>
+
+        <!-- Long 3 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <div class="container text-center">
+      <h2 class="section-title massive fade-up-scroll"><i class="ph-duotone ph-paper-plane-tilt"></i> Ready to
+        elevate<br>your content?</h2>
+      <div class="contact-methods fade-up-scroll delay-1">
+        <a href="mailto:arafat.yeasir.joy@gmail.com" class="contact-card magnetic-btn">
+          <div class="icon"><i class="ph-fill ph-envelope-simple"></i></div>
+          <h3>Email Me</h3>
+          <p>arafat.yeasir.joy@gmail.com</p>
+        </a>
+        <a href="tel:+8801622191234" class="contact-card magnetic-btn">
+          <div class="icon"><i class="ph-fill ph-whatsapp-logo"></i></div>
+          <h3>Call / WhatsApp</h3>
+          <p>+880 162219 1234</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div class="footer-copy">YEASIR ARAFAT JOY &copy; 2026</div>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/eru_the.explainer/" target="_blank"><i class="ph-fill ph-instagram-logo"></i>
+          Instagram</a>
+        <a href="Yeasir-Arafat-Joy-FlowCV-Resume.pdf" target="_blank"><i class="ph-fill ph-file-pdf"></i> Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
